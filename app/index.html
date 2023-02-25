@@ -1,23 +1,302 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
 
   <header class="header">
+
+    <div class="container_2">
+
+      <div class="container">
+        <div class="header__top">
+
+          <div class="header__logo">
+
+            <a class="logo" href="#">
+              <img class="logo__img" src="images/header/logo.png" alt="логотип">
+            </a>
+
+            <p class="header__logo_text">
+              Официальный представитель американской компании <a href="#" class="header__logo_sublink">LLC “GD”</a>
+
+            </p>
+          </div>
+
+          <div class="header__menu">
+
+            <a class="header__user header__menu_link" href="#"></a>
+
+            <a class="header__cart header__menu_link" href="#"></a>
+
+            <form action="#" class="header__form">
+
+              <input type="text" class="header__input" type="text" placeholder="поиск">
+
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
     <div class="container">
-      
+
+      <div class="header__bottom">
+
+        <nav class="menu">
+
+          <ul class="menu__list">
+
+            <div class="dropdown">
+              <button class="btn dropdown-toggle menu__link menu__link_dropdown" type="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                каталог
+              </button>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="#">каталог1</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">каталог2</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">каталог3</a>
+                </li>
+              </ul>
+            </div>
+            <li class="menu__item">
+              <a class="menu__link" href="#">
+                оплата и доставка
+              </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">
+                контакты
+              </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">
+                реквезиты
+              </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">
+                о нас
+              </a>
+            </li>
+
+          </ul>
+
+        </nav>
+
+      </div>
+
     </div>
   </header>
 
+  <main>
 
+    <section class="section about">
+      <div class="container">
+
+        <div class="about__inner">
+
+          <h1 class="about__title title">Заголовок</h1>
+
+          <h2 class="about__subtitle">о нас</h2>
+
+          <p class="about__text">Мы помогаем сделать ваш бизнес максимально простым и удобным. Наши менеджеры помогут
+            вам найти нужный товар и доставить
+            его в кратчайшие сроки. Мы индивидуально подойдем к каждому заказу и возьмем решение любых проблем на себя –
+            это наши
+            самые главные цели.</p>
+
+          <h2 class="about__subtitle">главное нарпавление деятельности</h2>
+
+          <p class="about__text">Компания спициализируется на поставках нового оборудования и активно развивает поставки
+            оборудования Refurbished
+            (Refurbished — это товары, по тем или иным причинам вернувшиеся производителю после продажи, которые тот, в
+            свою
+            очередь, проинспектировал, при необходимости заменил брак, удалил следы использования и выставил на
+            продажу).
+            Специалисты нашей компании проведут для вас индивидуальный запрос по интересующим вас подробностям
+            комплектации,
+            технического состояния оборудования. Предоставят вам всю необходимую документацию, тесты , диагностические
+            карты, листы
+            испытаний по вашему запросу.</p>
+
+          <div class="about__box">
+            <a class="about__link link" href="#">заказать под ключ</a>
+            <a class="about__link link" href="#">перейти в каталог</a>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <section class="section question">
+      <div class="container">
+
+        <div class="question__top">
+
+          <h3 class="question__title">
+            Остались какие то вопросы?
+          </h3>
+
+          <form action="#">
+
+            <label>
+
+              <input class="question__input" type="text" placeholder="Имя">
+              <input class="question__input" type="tel" placeholder="Номер телефона">
+            </label>
+
+            <textarea class="question__textarea" type="text" placeholder="Комментрий"></textarea>
+
+            <button class="button question__btn" type="submit">Отравить</button>
+
+          </form>
+        </div>
+
+        <div class="question__bottom">
+          <h2 class="title question__bottom_title">Часто задаваемые вопросы</h2>
+
+          <div class="question__bottom_inner">
+
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item question__item">
+                <h2 class="accordion-header" id="headingOne">
+                  <button class="accordion-button question__button" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna
+                    aliqua.
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    This is the first item's accordion body. It is shown by default, until the collapse
+                    plugin
+                    adds
+                    the appropriate classes that we use to style each element. These classes control the overall
+                    appearance, as
+                    well
+                    as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or
+                    overriding our
+                    default variables. It's also worth noting that just about any HTML can go within the
+                    .accordion-body though the transition does limit overflow.
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item question__item">
+                <h2 class="accordion-header" id="headingOne">
+                  <button class="accordion-button question__button" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna
+                    aliqua.
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    This is the first item's accordion body. It is shown by default, until the collapse
+                    plugin
+                    adds
+                    the appropriate classes that we use to style each element. These classes control the overall
+                    appearance, as
+                    well
+                    as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or
+                    overriding our
+                    default variables. It's also worth noting that just about any HTML can go within the
+                    .accordion-body though the transition does limit overflow.
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item question__item">
+                <h2 class="accordion-header" id="headingOne">
+                  <button class="accordion-button question__button" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna
+                    aliqua.
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    This is the first item's accordion body. It is shown by default, until the collapse
+                    plugin
+                    adds
+                    the appropriate classes that we use to style each element. These classes control the overall
+                    appearance, as
+                    well
+                    as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or
+                    overriding our
+                    default variables. It's also worth noting that just about any HTML can go within the
+                    .accordion-body though the transition does limit overflow.
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item question__item">
+                <h2 class="accordion-header" id="headingOne">
+                  <button class="accordion-button question__button" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna
+                    aliqua.
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    This is the first item's accordion body. It is shown by default, until the collapse
+                    plugin
+                    adds
+                    the appropriate classes that we use to style each element. These classes control the overall
+                    appearance, as
+                    well
+                    as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or
+                    overriding our
+                    default variables. It's also worth noting that just about any HTML can go within the
+                    .accordion-body though the transition does limit overflow.
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <script src="js/bootstrap.bundle.min.js"></script>
   <script src="js/main.min.js"></script>
 </body>
 

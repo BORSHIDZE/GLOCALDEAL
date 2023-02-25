@@ -1,0 +1,29 @@
+@font-face {
+  font-family: 'arlrdbd', sans-serif;
+  src: local('arlrdbd'),
+    url('../fonts/arlrdbd.woff2') format('woff2'),
+    url('../fonts/arlrdbd.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'arialmt', sans-serif;
+  src: local('arialmt'),
+    url('../fonts/arialmt.woff2') format('woff2'),
+    url('../fonts/arialmt.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Arial-BoldMT', sans-serif;
+  src: local('Arial-BoldMT'),
+    url('../fonts/Arial-BoldMT.woff2') format('woff2'),
+    url('../fonts/Arial-BoldMT.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
