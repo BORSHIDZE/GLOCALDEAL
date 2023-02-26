@@ -65,7 +65,7 @@ body {
         background-color: transparent;
         color: #000;
       }
-      
+
       &:focus-visible {
         background-color: transparent;
         color: #000;
@@ -109,3 +109,31 @@ body {
   }
 }
 
+.burger {
+  display: none;
+  width: 20px;
+  height: 2px;
+  background-color: black;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 2px;
+    background-color: black;
+    bottom: -5px;
+    left: 0;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 2px;
+    background-color: black;
+    top: -5px;
+    left: 0;
+  }
+
+}

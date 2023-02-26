@@ -1,0 +1,40 @@
+@media (max-width: 1400px) {
+  .container_3 {
+    width: 1200px;
+  }
+}
+
+@media (max-width: 1200px){
+  .header {
+
+    &__menu {
+      margin-left: 20px;
+    }
+
+    &__top {
+      justify-content: space-between;
+    }
+  }
+}
+
+@media (max-width: 992px) {}
+
+@media (max-width: 768px) {
+  .menu {
+    width: auto;
+  }
+}
+
+@media (max-width: 576px) {
+  .burger {
+    display: flex;
+  }
+
+  .menu__list {
+    transform: translateX(-200%);
+
+    &--active {
+      transform: translateX(0);
+    }
+  }
+}
