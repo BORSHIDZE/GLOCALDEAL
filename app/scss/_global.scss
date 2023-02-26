@@ -18,6 +18,10 @@ body {
   @extend %bg;
   transition: all .3s;
 
+  &--white {
+    display: none;
+  }
+
   &:hover {
     scale: 1.1;
   }
@@ -111,28 +115,37 @@ body {
 
 .burger {
   display: none;
-  width: 20px;
-  height: 2px;
+  width: 25px;
+  height: 3px;
   background-color: black;
   position: relative;
+  margin-left: 10px;
+
+  &:hover {
+    scale: 1.1;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
 
   &::after {
     content: "";
     position: absolute;
-    width: 20px;
-    height: 2px;
+    width: 25px;
+    height: 3px;
     background-color: black;
-    bottom: -5px;
+    bottom: -9px;
     left: 0;
   }
 
   &::before {
     content: "";
     position: absolute;
-    width: 20px;
-    height: 2px;
+    width: 25px;
+    height: 3px;
     background-color: black;
-    top: -5px;
+    top: -9px;
     left: 0;
   }
 
