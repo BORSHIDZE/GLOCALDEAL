@@ -167,6 +167,43 @@
       }
     }
   }
+
+  .key__subtitle {
+    width: auto;
+    font-size: 20px;
+    line-height: 48px;
+    margin-bottom: 50px;
+  }
+
+  .key .title {
+    margin-bottom: 20px;
+  }
+
+  .password__text {
+    width: auto;
+  }
+
+  .password__modal_dialog {
+    min-width: 500px;
+  }
+
+  .password__form {
+    padding: 50px 0;
+    max-width: 365px;
+  }
+
+  .password__form_input {
+    display: block;
+  }
+
+  .password__form_link {
+    display: block;
+  }
+
+  .password__form_btn {
+    margin-top: 0;
+  }
+
 }
 
 @media (max-width: 576px) {
@@ -376,5 +413,24 @@
     &__down_list {
       width: auto;
     }
+  }
+
+  .key {
+    padding-bottom: 100px;
+  }
+
+  .form,
+  .form__input,
+  .form__textarea {
+    width: 100%;
+  }
+
+  .form {
+    padding: 30px 20px;
+    text-align: center;
+  }
+
+  .password__modal_dialog {
+    min-width: 300px;
   }
 }
