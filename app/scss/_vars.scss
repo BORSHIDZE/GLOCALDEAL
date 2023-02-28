@@ -4,6 +4,12 @@
   background-size: cover;
 }
 
+%checkbox {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
 %arial400 {
   font-family: 'arialmt', sans-serif;
   font-weight: 400;

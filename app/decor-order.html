@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>GLOCALDEAL</title>
+  <title>Оформление заказа</title>
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
@@ -113,161 +113,193 @@
 
   <main>
 
-    <section class="section about">
+
+    <section class="section decor-order">
       <div class="container">
 
-        <div class="about__inner">
+        <h1 class="title decor-order__title">Оформление заказа</h1>
 
-          <h1 class="about__title title">Заголовок</h1>
+        <div class="decor-order__top">
 
-          <h2 class="about__subtitle">о нас</h2>
+          <form action="#" class="form decor-order__form">
 
-          <p class="about__text">Мы помогаем сделать ваш бизнес максимально простым и удобным. Наши менеджеры помогут
-            вам найти нужный товар и доставить
-            его в кратчайшие сроки. Мы индивидуально подойдем к каждому заказу и возьмем решение любых проблем на себя –
-            это наши
-            самые главные цели.</p>
+            <h2 class="form__title">Данные</h2>
 
-          <h2 class="about__subtitle">главное нарпавление деятельности</h2>
+            <div class="decor-order__form_box">
 
-          <p class="about__text">Компания спициализируется на поставках нового оборудования и активно развивает поставки
-            оборудования Refurbished
-            (Refurbished — это товары, по тем или иным причинам вернувшиеся производителю после продажи, которые тот, в
-            свою
-            очередь, проинспектировал, при необходимости заменил брак, удалил следы использования и выставил на
-            продажу).
-            Специалисты нашей компании проведут для вас индивидуальный запрос по интересующим вас подробностям
-            комплектации,
-            технического состояния оборудования. Предоставят вам всю необходимую документацию, тесты , диагностические
-            карты, листы
-            испытаний по вашему запросу.</p>
+              <div class="decor-order__form_wrapper">
 
-          <div class="about__box">
-            <a class="about__link link" href="#">заказать под ключ</a>
-            <a class="about__link link" href="#">перейти в каталог</a>
-          </div>
+                <input type="radio" name="role" id="single" class="decor-order__form_input__radio" checked>
 
-        </div>
+                <label for="single" class="decor-order__form_label__radio">
+                  Для частного клиента
+                </label>
 
-      </div>
-    </section>
+              </div>
 
-    <section class="section question">
-      <div class="container">
+              <div class="decor-order__form_wrapper">
 
-        <div class="question__top">
+                <input type="radio" name="role" id="company" class="decor-order__form_input__radio">
 
-          <h3 class="question__title">
-            Остались какие то вопросы?
-          </h3>
+                <label for="company" class="decor-order__form_label__radio">
+                  Для компаний
+                </label>
 
-          <form action="#">
+              </div>
 
-            <label class="question__label">
+            </div>
 
-              <input class="question__input" type="text" placeholder="Имя">
-              <input class="question__input" type="tel" placeholder="Номер телефона">
+            <label for="name" class="decor-order__form_label ">
+              ФИО
+
+              <input type="text" class="decor-order__form_input form__input" placeholder="Фамилия, имя, отчество"
+                id="name">
+
             </label>
 
-            <textarea class="question__textarea"  placeholder="Комментрий"></textarea>
+            <div class="decor-order__form_content">
 
-            <button class="button question__btn" type="submit">Отравить</button>
+              <label for="telephone" class="decor-order__form_label decor-order__form_content__label">
+                Телефон
+
+                <input type="text" class="decor-order__form_input form__input" placeholder="+79221110500"
+                  id="telephone">
+
+              </label>
+
+              <label for="email" class="decor-order__form_label decor-order__form_content__label">
+                Email
+
+                <input type="text" class="decor-order__form_input form__input" placeholder="Email" id="email">
+
+              </label>
+
+              <label for="city" class="decor-order__form_label decor-order__form_content__label">
+                Город
+
+                <input type="text" class="decor-order__form_input form__input" placeholder="Москва" id="city">
+
+              </label>
+
+              <label for="street" class="decor-order__form_label decor-order__form_content__label">
+                Улица
+
+                <input type="text" class="decor-order__form_input form__input" placeholder="Петровка ул." id="street">
+
+              </label>
+
+              <label for="house" class="decor-order__form_label decor-order__form_content__label">
+                Дом, корпус
+
+                <input type="text" class="decor-order__form_input form__input" placeholder="1" id="house">
+
+              </label>
+
+              <label for="apartament" class="decor-order__form_label decor-order__form_content__label">
+                Квартира
+
+                <input type="text" class="decor-order__form_input form__input" placeholder="1" id="apartament">
+
+              </label>
+
+              <label for="indeks" class="decor-order__form_label decor-order__form_content__label">
+                Индекс
+
+                <input type="text" class="decor-order__form_input form__input" placeholder="111111" id="indeks">
+
+              </label>
+
+            </div>
+
+            <label for="comment" class="decor-order__form_label">
+              Комментарий
+            </label>
+
+            <textarea class="decor-order__form_textarea form__textarea" id="comment"
+              placeholder="Товар хрупкий"></textarea>
 
           </form>
-        </div>
 
-        <div class="question__bottom">
-          <h2 class="title question__bottom_title">Часто задаваемые вопросы</h2>
+          <form action="#" class="form decor-order__form 
+          decor-order__form-delivery">
 
-          <div class="question__bottom_inner">
+            <h2 class="form__title">Доставка</h2>
 
-            <div class="accordion" id="accordionExample">
-              <div class="accordion-item question__item">
-                <h2 class="accordion-header" id="headingOne">
-                  <button class="accordion-button question__button" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#collapseOne1" aria-expanded="true" aria-controls="collapseOne1">
-                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna
-                    aliqua.
-                  </button>
-                </h2>
-                <div id="collapseOne1" class="accordion-collapse collapse" aria-labelledby="headingOne"
-                  data-bs-parent="#accordionExample">
-                  <div class="accordion-body">
-                    This is the first item's accordion body. It is shown by default, until the collapse
-                    plugin
-                    adds
-                    the appropriate classes that we use to style each element. These classes control the overall
-                    appearance, as
-                    well
-                    as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or
-                    overriding our
-                    default variables. It's also worth noting that just about any HTML can go within the
-                    .accordion-body though the transition does limit overflow.
-                  </div>
-                </div>
+
+            <div class="decor-order__form_box decor-order__form-delivery__box">
+
+              <div class="decor-order__form_wrapper decor-order__form-delivery__wrapper">
+
+                <input type="radio" name="role" id="easy"
+                  class="decor-order__form_input__radio decor-order__form-delivery__input_radio" checked>
+
+                <label for="easy" class="decor-order__form_label__radio decor-order__form-delivery__label_radio">
+                  Простая
+                </label>
+
+                <span class="decor-order__form-delivery__price">119 руб.</span>
+
               </div>
+
+              <div class="decor-order__form_wrapper decor-order__form-delivery__wrapper">
+
+                <input type="radio" name="role" id="order"
+                  class="decor-order__form_input__radio decor-order__form-delivery__input_radio">
+
+                <label for="order" class="decor-order__form_label__radio decor-order__form-delivery__label_radio">
+                  Заказная
+                </label>
+
+                <span class="decor-order__form-delivery__price">119 руб.</span>
+
+
+              </div>
+
+              <div class="decor-order__form_wrapper decor-order__form-delivery__wrapper">
+
+                <input type="radio" name="role" id="delayed"
+                  class="decor-order__form_input__radio decor-order__form-delivery__input_radio">
+
+                <label for="delayed" class="decor-order__form_label__radio decor-order__form-delivery__label_radio">
+                  Отложеная
+                </label>
+
+                <span class="decor-order__form-delivery__price">119 руб.</span>
+
+
+              </div>
+
             </div>
 
-            <div class="accordion" id="accordionExample">
-              <div class="accordion-item question__item">
-                <h2 class="accordion-header" id="headingOne">
-                  <button class="accordion-button question__button" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#collapseOne2" aria-expanded="true" aria-controls="collapseOne">
-                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna
-                    aliqua.
-                  </button>
-                </h2>
-                <div id="collapseOne2" class="accordion-collapse collapse" aria-labelledby="headingOne"
-                  data-bs-parent="#accordionExample2">
-                  <div class="accordion-body">
-                    This is the first item's accordion body. It is shown by default, until the collapse
-                    plugin
-                    adds
-                    the appropriate classes that we use to style each element. These classes control the overall
-                    appearance, as
-                    well
-                    as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or
-                    overriding our
-                    default variables. It's also worth noting that just about any HTML can go within the
-                    .accordion-body though the transition does limit overflow.
-                  </div>
-                </div>
+            <div class="decor-order__form-delivery__total">
+
+              <h2 class="form__title">Итого</h2>
+
+
+              <div class="decor-order__form-delivery__total_box">
+
+                <span class="decor-order__form-delivery__text">
+                  Сумма
+                </span>
+
+                <span class="decor-order__form-delivery__total_price">
+                  30 199 руб.
+                </span>
+
               </div>
+
+              <button class="decor-order__form-delivery__btn form__btn " type="submit">Оформить заказ</button>
+
             </div>
 
-
-          </div>
+          </form>
 
         </div>
+
       </div>
     </section>
 
-    <div class="partners">
-      <h2 class="title partners__title">Наши партнеры</h2>
-      <div class="container_3">
-        <a class="partners__link" href="#">
-          <img class="partners__img" src="images/partners/1.png" alt="логотипы партнеров">
-        </a>
 
-        <a class="partners__link" href="#">
-          <img class="partners__img" src="images/partners/2.png" alt="логотипы партнеров">
-        </a>
-
-        <a class="partners__link" href="#">
-          <img class="partners__img" src="images/partners/3.png" alt="логотипы партнеров">
-        </a>
-
-        <a class="partners__link" href="#">
-          <img class="partners__img" src="images/partners/4.png" alt="логотипы партнеров">
-        </a>
-
-        <a class="partners__link" href="#">
-          <img class="partners__img" src="images/partners/5.png" alt="логотипы партнеров">
-        </a>
-      </div>
-    </div>
 
   </main>
 
