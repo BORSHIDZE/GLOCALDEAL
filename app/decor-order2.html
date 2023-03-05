@@ -129,7 +129,7 @@
 
               <div class="decor-order__form_wrapper">
 
-                <input type="radio" name="role" id="single" class="decor-order__form_input__radio" checked>
+                <input type="radio" name="role" id="single" class="decor-order__form_input__radio">
 
                 <label for="single" class="decor-order__form_label__radio">
                   Для частного клиента
@@ -139,7 +139,7 @@
 
               <div class="decor-order__form_wrapper">
 
-                <input type="radio" name="role" id="company" class="decor-order__form_input__radio">
+                <input type="radio" name="role" id="company" class="decor-order__form_input__radio" checked>
 
                 <label for="company" class="decor-order__form_label__radio">
                   Для компаний
@@ -150,27 +150,27 @@
             </div>
 
             <label for="name" class="decor-order__form_label ">
-              ФИО
+              Название компании
 
-              <input type="text" class="decor-order__form_input form__input decor-order__form_input-big"
-                placeholder="Фамилия, имя, отчество" id="name">
+              <input type="text" class="decor-order__form_input form__input
+              decor-order__form_input-big" placeholder="ООО “Гражданская оборона”"
+                id="name">
 
             </label>
 
             <div class="decor-order__form_content">
 
-              <label for="telephone" class="decor-order__form_label decor-order__form_content__label">
-                Телефон
+              <label for="IIN" class="decor-order__form_label decor-order__form_content__label">
+                ИИН
 
-                <input type="text" class="decor-order__form_input form__input" placeholder="+79221110500"
-                  id="telephone">
+                <input type="text" class="decor-order__form_input form__input" placeholder="10 символов" id="IIN">
 
               </label>
 
-              <label for="email" class="decor-order__form_label decor-order__form_content__label">
-                Email
+              <label for="KPP" class="decor-order__form_label decor-order__form_content__label">
+                КПП
 
-                <input type="text" class="decor-order__form_input form__input" placeholder="Email" id="email">
+                <input type="text" class="decor-order__form_input form__input" placeholder="9 символов" id="KPP">
 
               </label>
 
@@ -199,6 +199,21 @@
                 Квартира
 
                 <input type="text" class="decor-order__form_input form__input" placeholder="1" id="apartament">
+
+              </label>
+
+              <label for="telephone" class="decor-order__form_label decor-order__form_content__label">
+                Телефон
+
+                <input type="text" class="decor-order__form_input form__input" placeholder="+79221110500"
+                  id="telephone">
+
+              </label>
+
+              <label for="email" class="decor-order__form_label decor-order__form_content__label">
+                Email
+
+                <input type="text" class="decor-order__form_input form__input" placeholder="Email" id="email">
 
               </label>
 
@@ -288,23 +303,7 @@
 
               </div>
 
-              <button class="decor-order__form-delivery__btn form__btn btn" type="submit" data-bs-toggle="modal"
-                data-bs-target="#exampleModal">Оформить заказ</button>
-
-              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-                aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered">
-                  <div class="modal-content">
-                    <div class="modal-body">
-
-                      <img class="decor-order__img"  src="images/decor-order/arrow.svg" alt="галочка">
-
-                      Спасибо, за Ваш заказ
-                    </div>
-
-                  </div>
-                </div>
-              </div>
+              <button class="decor-order__form-delivery__btn form__btn " type="submit">Оформить заказ</button>
 
             </div>
 

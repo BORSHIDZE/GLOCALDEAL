@@ -14,10 +14,36 @@
     &__top {
       justify-content: space-between;
     }
+
+    &__logo {
+      text-align: start;
+      width: 270px;
+    }
   }
 
   .logo {
     justify-content: start;
+  }
+
+  .decor-order {
+
+    &__top {
+      flex-direction: column;
+    }
+
+    &__form {
+      margin: 0 auto;
+      margin-bottom: 50px;
+    }
+
+    &__buttons {
+      flex-direction: column;
+    }
+
+    &__button {
+      margin: 0 auto;
+      margin-bottom: 50px;
+    }
   }
 
   .footer {
@@ -49,23 +75,35 @@
     &__contact_item {
       width: 140px;
     }
+  }
 
-    .question {
+  .question {
 
-      &__item {
-        width: 451px;
-      }
-
-      &__button::after {
-        bottom: -37px;
-        right: -10px;
-      }
-
-      &__button:not(.collapsed)::after {
-        bottom: -306px;
-        right: -10px;
-      }
+    &__bottom_inner {
+      grid-template-columns: repeat(1, 1fr);
     }
+
+    &__item {
+      width: 451px;
+    }
+
+    &__button::after {
+      bottom: -37px;
+      right: -10px;
+    }
+
+    &__button:not(.collapsed)::after {
+      bottom: -306px;
+      right: -10px;
+    }
+  }
+
+  .accordion {
+    margin: 0 auto;
+  }
+
+  .question__button:not(.collapsed)::after {
+    bottom: -30px;
   }
 
   .partners .container_3 {
@@ -76,6 +114,20 @@
 
   .partners__link {
     padding: 25px;
+  }
+
+  .basket {
+
+    &__info {
+      flex-direction: column;
+    }
+
+    &__inner {
+      margin: 0 auto;
+      margin-bottom: 50px;
+    }
+
+
   }
 }
 
@@ -96,13 +148,12 @@
     }
 
     &__input {
-      width: 300px;
-
+      width: 100%;
     }
+  }
 
-    &__bottom_inner {
-      display: none;
-    }
+  .basket {
+    padding-bottom: 150px;
   }
 }
 
@@ -151,12 +202,18 @@
 
   .footer {
 
+    .logo__img {
+      margin: 0 auto;
+    }
+
     &__top {
       justify-content: center;
+      flex-direction: column;
     }
 
     &__logo {
-      display: none;
+      margin: 0 auto;
+      margin-bottom: 40px;
     }
 
     &__down {
@@ -206,6 +263,38 @@
 
   .password__form_btn {
     margin-top: 0;
+  }
+
+  .decor-order {
+
+    &__form {
+      width: 100%;
+      padding: 50px 20px;
+
+      &_box {
+        width: 100%;
+      }
+
+      &_input-big {
+        width: 100%;
+      }
+
+      &_content {
+        grid-gap: 10px;
+
+        &__label {
+          width: 100%;
+        }
+      }
+    }
+
+    &__button {
+      width: 100%;
+    }
+  }
+
+  .basket {
+    padding-top: 100px;
   }
 
 }
@@ -381,6 +470,11 @@
       margin-bottom: 100px;
     }
 
+    &__item {
+      padding: 40px 20px;
+      width: auto;
+    }
+
     &__label {
       display: block;
     }
@@ -436,5 +530,128 @@
 
   .password__modal_dialog {
     min-width: 300px;
+  }
+
+  .decor-order {
+    padding-bottom: 50px;
+
+    .form__title {
+      font-size: 20px;
+    }
+
+    &__form {
+
+      &_label__radio {
+        font-size: 12px;
+        padding-left: 20px;
+
+        &::before {
+          width: 15px;
+          height: 15px;
+        }
+      }
+
+      &_label {
+        text-align: start;
+        font-size: 16px;
+      }
+
+      &_input,
+      &_textarea {
+        padding: 10px 15px;
+
+        &::placeholder {
+          font-size: 13px;
+        }
+      }
+
+      &-delivery {
+
+        &__label_radio {
+          line-height: 19px;
+        }
+
+        &__price {
+          font-size: 18px;
+        }
+
+        &__text {
+          font-size: 20px;
+        }
+
+        &__total_price {
+          font-size: 20px;
+        }
+
+        &__btn {
+          font-size: 22px;
+          padding: 20px 30px;
+          width: 100%;
+        }
+      }
+    }
+
+    &__button {
+      font-size: 18px;
+      padding: 50px;
+    }
+
+    &__text {
+      font-size: 13px;
+    }
+
+    .modal-body {
+      font-size: 20px;
+    }
+
+    .modal-content {
+      padding: 20px;
+    }
+  }
+
+  .basket {
+    padding-bottom: 50px;
+
+    &-title {
+      margin-bottom: 50px;
+    }
+
+    &__item {
+      flex-direction: column;
+      margin: 0 auto;
+      width: 100%;
+
+      &:not(:last-child) {
+        margin-bottom: 80px;
+      }
+    }
+
+    &__image {
+      margin: 0 auto;
+      margin-bottom: 20px;
+    }
+
+    &__title,
+    &__price {
+      text-align: center;
+    }
+
+    &__panel {
+      justify-content: center;
+    }
+
+    &_content {
+      padding: 50px 0;
+    }
+    
+    &__footer {
+      width: 270px;
+      margin: 0 auto;
+      margin-top: 25px;
+    }
+
+    &__btn {
+      width: 90px;
+    }
   }
 }

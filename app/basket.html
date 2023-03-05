@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Оформление заказа</title>
+  <title>Корзина</title>
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
@@ -114,114 +114,201 @@
   <main>
 
 
-    <section class="section decor-order">
+    <section class="section basket">
       <div class="container">
 
-        <h1 class="title decor-order__title">Оформление заказа</h1>
+        <h1 class="basket-title title">Корзина</h1>
 
-        <div class="decor-order__top">
+        <div class="basket__info">
 
-          <form action="#" class="form decor-order__form">
+          <div class="basket__inner">
 
-            <h2 class="form__title">Данные</h2>
+            <div class="basket__item">
 
-            <div class="decor-order__form_box">
-
-              <div class="decor-order__form_wrapper">
-
-                <input type="radio" name="role" id="single" class="decor-order__form_input__radio" checked>
-
-                <label for="single" class="decor-order__form_label__radio">
-                  Для частного клиента
-                </label>
-
+              <div class="basket__image">
+                <img src="images/basket/1.png" alt="товар">
               </div>
 
-              <div class="decor-order__form_wrapper">
+              <div class="basket__content">
+                <h2 class="basket__title">
+                  <span class="basket__subtitle">Диван</span>
+                  Сваут Velvet Mustard
+                </h2>
 
-                <input type="radio" name="role" id="company" class="decor-order__form_input__radio">
+                <p class="basket__price">100 000 <span class="basket__subtext">руб</span>.</p>
 
-                <label for="company" class="decor-order__form_label__radio">
-                  Для компаний
-                </label>
+                <div class="basket__panel">
+
+                  <div class="basket__quantity">
+
+                    <div class="basket__minus basket__box"></div>
+
+                    <div class="basket__number basket__box">1</div>
+
+                    <div class="basket__plus basket__box"></div>
+
+                  </div>
+
+                  <button class="basket__trash" type="submit" data-bs-toggle="modal" data-bs-target="#exampleModal">
+
+                    <div class="basket__trash">
+                      <img src="images/basket/2.svg" alt="удалить">
+                    </div>
+
+                  </button>
+
+                  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                      <div class="modal-content basket_content">
+                        <div class="modal-body">
+
+                          Вы уверены, что хотите удалить товар?
+                        </div>
+
+                        <div class="modal-footer basket__footer">
+
+                          <button type="button" class="btn basket__btn basket__btn_yes">Да</button>
+
+                          <button type="button" class="btn basket__btn basket__btn_no"
+                            data-bs-dismiss="modal">Отмена</button>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
 
               </div>
 
             </div>
 
-            <label for="name" class="decor-order__form_label ">
-              ФИО
+            <div class="basket__item">
 
-              <input type="text" class="decor-order__form_input form__input decor-order__form_input-big"
-                placeholder="Фамилия, имя, отчество" id="name">
+              <div class="basket__image">
+                <img src="images/basket/1.png" alt="товар">
+              </div>
 
-            </label>
+              <div class="basket__content">
 
-            <div class="decor-order__form_content">
+                <h2 class="basket__title">
+                  <span class="basket__subtitle">Диван</span>
+                  Сваут Velvet Mustard
+                </h2>
 
-              <label for="telephone" class="decor-order__form_label decor-order__form_content__label">
-                Телефон
+                <p class="basket__price">100 000 <span class="basket__subtext">руб</span>.</p>
 
-                <input type="text" class="decor-order__form_input form__input" placeholder="+79221110500"
-                  id="telephone">
+                <div class="basket__panel">
 
-              </label>
+                  <div class="basket__quantity">
 
-              <label for="email" class="decor-order__form_label decor-order__form_content__label">
-                Email
+                    <div class="basket__minus basket__box"></div>
 
-                <input type="text" class="decor-order__form_input form__input" placeholder="Email" id="email">
+                    <div class="basket__number basket__box">1</div>
 
-              </label>
+                    <div class="basket__plus basket__box"></div>
 
-              <label for="city" class="decor-order__form_label decor-order__form_content__label">
-                Город
+                  </div>
 
-                <input type="text" class="decor-order__form_input form__input" placeholder="Москва" id="city">
+                  <button class="basket__trash" type="submit" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <div class="basket__trash">
+                      <img src="images/basket/2.svg" alt="удалить">
+                    </div>
+                  </button>
 
-              </label>
+                  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                      <div class="modal-content">
+                        <div class="modal-body">
 
-              <label for="street" class="decor-order__form_label decor-order__form_content__label">
-                Улица
+                          Вы уверены, что хотите удалить товар?
+                        </div>
 
-                <input type="text" class="decor-order__form_input form__input" placeholder="Петровка ул." id="street">
+                        <div class="modal-footer basket__footer">
 
-              </label>
+                          <button type="button" class="btn basket__btn basket__btn_yes">Да</button>
 
-              <label for="house" class="decor-order__form_label decor-order__form_content__label">
-                Дом, корпус
+                          <button type="button" class="btn basket__btn basket__btn_no"
+                            data-bs-dismiss="modal">Отмена</button>
+                        </div>
 
-                <input type="text" class="decor-order__form_input form__input" placeholder="1" id="house">
+                      </div>
+                    </div>
+                  </div>
 
-              </label>
+                </div>
 
-              <label for="apartament" class="decor-order__form_label decor-order__form_content__label">
-                Квартира
-
-                <input type="text" class="decor-order__form_input form__input" placeholder="1" id="apartament">
-
-              </label>
-
-              <label for="indeks" class="decor-order__form_label decor-order__form_content__label">
-                Индекс
-
-                <input type="text" class="decor-order__form_input form__input" placeholder="111111" id="indeks">
-
-              </label>
+              </div>
 
             </div>
 
-            <label for="comment" class="decor-order__form_label">
-              Комментарий к заказу
-            </label>
+            <div class="basket__item">
 
-            <textarea class="decor-order__form_textarea form__textarea" id="comment"
-              placeholder="Товар хрупкий"></textarea>
+              <div class="basket__image">
+                <img src="images/basket/1.png" alt="товар">
+              </div>
 
-          </form>
+              <div class="basket__content">
+                <h2 class="basket__title">
+                  <span class="basket__subtitle">Диван</span>
+                  Сваут Velvet Mustard
+                </h2>
+
+                <p class="basket__price">100 000 <span class="basket__subtext">руб</span>.</p>
+
+                <div class="basket__panel">
+
+                  <div class="basket__quantity">
+
+                    <div class="basket__minus basket__box"></div>
+
+                    <div class="basket__number basket__box">1</div>
+
+                    <div class="basket__plus basket__box"></div>
+
+                  </div>
+
+                  <button class="basket__trash" type="submit" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <div class="basket__trash">
+                      <img src="images/basket/2.svg" alt="удалить">
+                    </div>
+                  </button>
+
+                  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                      <div class="modal-content">
+                        <div class="modal-body">
+
+                          Вы уверены, что хотите удалить товар?
+                        </div>
+
+                        <div class="modal-footer basket__footer">
+
+                          <button type="button" class="btn basket__btn basket__btn_yes">Да</button>
+
+                          <button type="button" class="btn basket__btn basket__btn_no"
+                            data-bs-dismiss="modal">Отмена</button>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+
+
+          </div>
 
           <form action="#" class="form decor-order__form 
-          decor-order__form-delivery">
+           decor-order__form-delivery basket__form">
 
             <h2 class="form__title">Доставка</h2>
 
@@ -297,7 +384,7 @@
                   <div class="modal-content">
                     <div class="modal-body">
 
-                      <img class="decor-order__img"  src="images/decor-order/arrow.svg" alt="галочка">
+                      <img class="decor-order__img" src="images/decor-order/arrow.svg" alt="галочка">
 
                       Спасибо, за Ваш заказ
                     </div>
@@ -312,26 +399,11 @@
 
         </div>
 
-        <div class="decor-order__box">
-
-          <h2 class="title">Способы оплаты</h2>
-
-          <div class="decor-order__buttons">
-
-            <button class="decor-order__button" type="submit">
-              Оплата онлайн <br> <span class="decor-order__text">Банковской картой, Ю-money, QIWI</span>
-            </button>
-
-            <button class="decor-order__button" type="submit">
-              Оплата наличными <br> <span class="decor-order__text">Банковской картой или наличными курьеру</span>
-            </button>
-
-          </div>
-
-        </div>
-
       </div>
+
     </section>
+
+
 
   </main>
 

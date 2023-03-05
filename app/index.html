@@ -30,7 +30,7 @@
             </a>
 
             <p class="header__logo_text">
-              Официальный представитель американской компании <a href="#" class="header__logo_sublink">LLC “GD”</a>
+              Официальный представитель американской компании <span class="header__logo_subtext">LLC “GD”</span>
 
             </p>
           </div>
@@ -169,7 +169,7 @@
               <input class="question__input" type="tel" placeholder="Номер телефона">
             </label>
 
-            <textarea class="question__textarea"  placeholder="Комментрий"></textarea>
+            <textarea class="question__textarea" placeholder="Комментрий"></textarea>
 
             <button class="button question__btn" type="submit">Отравить</button>
 
@@ -185,7 +185,7 @@
               <div class="accordion-item question__item">
                 <h2 class="accordion-header" id="headingOne">
                   <button class="accordion-button question__button" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#collapseOne1" aria-expanded="true" aria-controls="collapseOne1">
+                    data-bs-target="#collapseOne1" aria-expanded="false" aria-controls="collapseOne1">
                     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
                     et dolore magna
                     aliqua.
@@ -213,14 +213,14 @@
               <div class="accordion-item question__item">
                 <h2 class="accordion-header" id="headingOne">
                   <button class="accordion-button question__button" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#collapseOne2" aria-expanded="true" aria-controls="collapseOne">
+                    data-bs-target="#collapseOne2" aria-expanded="false" aria-controls="collapseOne2">
                     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
                     et dolore magna
                     aliqua.
                   </button>
                 </h2>
                 <div id="collapseOne2" class="accordion-collapse collapse" aria-labelledby="headingOne"
-                  data-bs-parent="#accordionExample2">
+                  data-bs-parent="#accordionExample">
                   <div class="accordion-body">
                     This is the first item's accordion body. It is shown by default, until the collapse
                     plugin
@@ -237,6 +237,61 @@
               </div>
             </div>
 
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item question__item">
+                <h2 class="accordion-header" id="headingOne">
+                  <button class="accordion-button question__button" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseOne3" aria-expanded="false" aria-controls="collapseOne3">
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna
+                    aliqua.
+                  </button>
+                </h2>
+                <div id="collapseOne3" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    This is the first item's accordion body. It is shown by default, until the collapse
+                    plugin
+                    adds
+                    the appropriate classes that we use to style each element. These classes control the overall
+                    appearance, as
+                    well
+                    as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or
+                    overriding our
+                    default variables. It's also worth noting that just about any HTML can go within the
+                    .accordion-body though the transition does limit overflow.
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item question__item">
+                <h2 class="accordion-header" id="headingOne">
+                  <button class="accordion-button question__button" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseOne4" aria-expanded="false" aria-controls="collapseOne4">
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna
+                    aliqua.
+                  </button>
+                </h2>
+                <div id="collapseOne4" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    This is the first item's accordion body. It is shown by default, until the collapse
+                    plugin
+                    adds
+                    the appropriate classes that we use to style each element. These classes control the overall
+                    appearance, as
+                    well
+                    as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or
+                    overriding our
+                    default variables. It's also worth noting that just about any HTML can go within the
+                    .accordion-body though the transition does limit overflow.
+                  </div>
+                </div>
+              </div>
+            </div>
 
           </div>
 
@@ -284,8 +339,8 @@
 
           <p class="header__logo_text footer__logo_text">
             Официальный <br>
-            представитель американской компании <br> <a href="#" class="header__logo_sublink footer__logo_sublink">LLC
-              “GD”</a>На рынке с 2008
+            представитель американской компании <br> <span class="header__logo_sublink footer__logo_subtext">LLC
+              “GD”</span> На рынке с 2008
             года
 
           </p>
