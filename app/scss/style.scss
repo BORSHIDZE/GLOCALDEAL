@@ -10,6 +10,12 @@
     border-bottom: 1px solid black;
   }
 
+  &__line {
+    height: 20px;
+    background-color: black;
+    width: 100%;
+  }
+
   &__top {
     padding-top: 30px;
     display: flex;
@@ -47,7 +53,7 @@
       transition: all .3s;
 
       &:hover {
-        scale: 1.1;
+        scale: 1.05;
       }
 
       &:active {
@@ -56,9 +62,82 @@
     }
   }
 
+  &__dropdown-menu {
+    min-width: 178px;
+  }
+
+  &__dropdown-mainlink {
+    position: relative;
+    padding-left: 38px !important;
+
+    &::before {
+      position: absolute;
+      content: "";
+      background-image: url('../images/header/user.svg');
+      width: 23px;
+      height: 25px;
+      top: -3px;
+      left: 0;
+    }
+  }
+
+  &__dropdown-exit {
+    background-image: url('../images/header/1.svg');
+    @extend %bg;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: 5px;
+    right: 3px;
+  }
+
+  .dropdown-item {
+    padding: 0;
+  }
+
+  &__dropdown-link {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    top: 18px;
+    right: 10px;
+  }
+
+  &__dropdown-cart {
+    position: relative;
+    padding-left: 38px !important;
+
+    &::before {
+      position: absolute;
+      content: "";
+      background-image: url('../images/header/2.svg');
+      width: 23px;
+      height: 25px;
+      top: -3px;
+      left: 0;
+    }
+  }
+
+  .dropdown-item:focus,
+  .dropdown-item:hover {
+    background-color: transparent;
+  }
+
+  #header__user::after {
+    display: none;
+  }
+
   &__user {
-    background-image: url('../images/header/user.svg');
-    width: 23px;
+    transition: all .3s;
+    border: none;
+
+    &:hover {
+      scale: 1.05;
+    }
+
+    &:active {
+      opacity: 0.5;
+    }
   }
 
   &__cart {
@@ -517,9 +596,11 @@
   &__modal {
 
     &_content {
-      background-image: url('../images/bg.png');
+      background-image: url('../images/bg.png') !important;
       @extend %bg;
       border-radius: 25px;
+      background: inherit;
+      background-color: #fff !important;
     }
 
     &_dialog {
@@ -994,7 +1075,8 @@
   }
 }
 
-.basket__trash:active,.basket__btn:active+.btn-check:checked+.btn,
+.basket__trash:active,
+.basket__btn:active+.btn-check:checked+.btn,
 .btn.active,
 .btn.show,
 .btn:first-child:active,
@@ -1023,17 +1105,104 @@
     background-color: #EBDE66;
     color: black;
   }
+
+  .basket__btn:active+.btn-check:checked+.btn,
+  .btn.active,
+  .btn.show,
+  .btn:first-child:active,
+  :not(.btn-check)+.btn:active {
+    color: black;
+    background-color: #EBDE66;
+    border: transparent;
+    outline: transparent;
+  }
 }
 
-.basket__btn:active+.btn-check:checked+.btn,
-.btn.active,
-.btn.show,
-.btn:first-child:active,
-:not(.btn-check)+.btn:active {
-  color: black;
-  background-color: #EBDE66;
-  border: transparent;
-  outline: transparent;
+
+
+.delivery {
+  background-image: url('../images/bg.png');
+  @extend %bg;
+  padding-bottom: 150px;
+
+  &__title {
+    margin-bottom: 100px;
+  }
+
+  .accordion-button {
+    justify-content: center;
+  }
+
+  .accordion-body {
+    padding-top: 10px;
+  }
+
+  &__accordion {
+    &:not(:last-child) {
+      margin-bottom: 50px;
+    }
+  }
+
+  &__item {
+    width: 800px;
+    padding: 50px 50px;
+    margin: 0 auto;
+    justify-content: center;
+  }
+
+  &__button {
+    box-shadow: none !important;
+  }
+}
+
+.catalog {
+
+  &__content {
+    background-color: #D9D9D9;
+    background: #D9D9D9;
+    color: black;
+    border: 1px solid rgba(0, 0, 0, 0.6);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    text-align: start;
+    padding: 40px 80px;
+  }
+
+  &__header {
+    display: none;
+  }
+
+  &__body {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__dialog {
+    max-width: 790px;
+  }
+
+  &__item {
+
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__link {
+    font-size: 13px;
+    line-height: 15px;
+    @extend %arial400;
+    transition: all .3s;
+
+    &:hover {
+      text-decoration: underline;
+    }
+
+    &:active {
+      opacity: 0.5;
+    }
+  }
+
 }
 
 

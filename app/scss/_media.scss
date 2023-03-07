@@ -318,7 +318,7 @@
 
     &__top {
       position: relative;
-      justify-content: end;
+      justify-content: center;
 
       &--active {
         padding-top: 0;
@@ -326,50 +326,16 @@
       }
     }
 
-    &__logo {
-      display: none;
-      width: 100%;
+    .logo__img {
+      margin: 0 auto;
+    }
 
-
-      .logo__img {
-        display: none;
-      }
-
-      .logo--white {
-        display: flex;
-        justify-content: center;
-        padding-top: 10px;
-      }
-
-      &_text {
-        border-bottom: 1px solid #fff;
-        padding: 0 10px;
-        padding-bottom: 10px;
-        max-width: 300px;
-        margin: 0 auto;
-        margin-top: 10px;
-      }
-
-      &_text,
-      &_sublink {
-        color: #fff;
-      }
-
-
-      &--active {
-        display: block;
-        position: absolute;
-        background: linear-gradient(111.46deg, rgba(25, 19, 49, 0.9) 23.29%, rgba(46, 20, 88, 0.9) 53.31%, rgba(145, 121, 37, 0.9) 90.06%);
-        max-width: 576px;
-      }
+    &__logo_text {
+      text-align: center;
     }
 
     &__menu {
-      margin-right: 10px;
-    }
-
-    &__menu_link {
-      margin-right: 10px;
+      display: none;
     }
 
     &__bottom {
@@ -379,6 +345,26 @@
 
       &--active {
         transform: translateY(0);
+      }
+    }
+
+    &__menu {
+      transform: translateX(-200%);
+      transition: all .3s;
+
+
+      &--active {
+        transform: translateX(0);
+        display: flex;
+        position: absolute;
+        top: 30px;
+        left: -20px;
+        z-index: 10;
+        border-bottom: 1px solid black;
+        width: 100%;
+        padding-bottom: 10px;
+        padding-left: 70px;
+        transition: all .3s;
       }
     }
   }
@@ -414,22 +400,24 @@
 
       &--active {
         transform: translateY(0);
-        background: linear-gradient(111.46deg, rgba(25, 19, 49, 0.9) 23.29%, rgba(46, 20, 88, 0.9) 53.31%, rgba(145, 121, 37, 0.9) 90.06%);
+        background-color: #fff;
+        border-bottom: 1px solid black;
+        padding-top: 50px;
+        transition: all .3s;
       }
     }
 
     &__link {
       border: transparent;
-      border-bottom: 1px solid #fff;
       border-radius: 0;
       box-shadow: transparent;
       width: 100%;
-      color: #fff;
-      padding: 15px;
+      color: black;
+      padding: 30px 15px;
+      border-bottom: 1px solid black;
 
       &:hover {
         box-shadow: none;
-        border-color: #fff;
       }
     }
   }
@@ -643,7 +631,7 @@
     &_content {
       padding: 50px 0;
     }
-    
+
     &__footer {
       width: 270px;
       margin: 0 auto;
