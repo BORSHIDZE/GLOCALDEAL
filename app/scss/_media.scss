@@ -155,6 +155,10 @@
   .basket {
     padding-bottom: 150px;
   }
+
+  .empty {
+    padding-bottom: 600px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -164,6 +168,7 @@
 
   .title {
     font-size: 40px;
+    line-height: 50px;
     margin-bottom: 25px;
   }
 
@@ -297,6 +302,21 @@
     padding-top: 100px;
   }
 
+  .catalog {
+
+    &__body {
+      flex-direction: column;
+    }
+
+    &__content {
+      z-index: 20;
+    }
+
+    &__list {
+      margin-bottom: 30px;
+    }
+  }
+
 }
 
 @media (max-width: 576px) {
@@ -306,7 +326,7 @@
   }
 
   .title {
-    line-height: 45px;
+    line-height: 50px;
     font-size: 35px;
   }
 
@@ -358,13 +378,14 @@
         display: flex;
         position: absolute;
         top: 30px;
-        left: -20px;
+        left: -25px;
         z-index: 10;
         border-bottom: 1px solid black;
         width: 100%;
         padding-bottom: 10px;
         padding-left: 70px;
         transition: all .3s;
+        justify-content: end;
       }
     }
   }
@@ -432,10 +453,6 @@
       color: #fff;
       border-color: #fff;
     }
-  }
-
-  .menu__link_dropdown:hover {
-    color: #fff;
   }
 
   .link,
