@@ -213,6 +213,10 @@
 
   &__link {
     padding: 18px;
+
+    &:hover {
+      color: #fff;
+    }
   }
 }
 
@@ -232,10 +236,6 @@
   width: 22px;
   height: 21px;
   content: "";
-}
-
-.accordion-button[aria-expanded="true"]::after {
-  display: none;
 }
 
 .question {
@@ -269,7 +269,7 @@
     line-height: 17px;
     color: rgba(0, 0, 0, 0.5);
     padding: 10px 15px;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 
     &:not(:last-child) {
       margin-right: 40px;
@@ -285,6 +285,7 @@
     line-height: 17px;
     color: rgba(0, 0, 0, 0.5);
     padding: 10px 15px;
+    resize: none;
   }
 
   &__btn {
@@ -328,17 +329,6 @@
       border: none;
       box-shadow: none;
     }
-
-    // &:not(.collapsed)::after {
-    //   position: absolute;
-    //   bottom: -270px;
-    //   right: 0;
-    //   background-image: url('../images/question/minus.svg');
-    //   width: 22px;
-    //   height: 21px;
-    // }
-
-
 
     &::after {
       content: "";
@@ -524,6 +514,10 @@
   padding-bottom: 200px;
   background-image: url('../images/bg.png');
   @extend %bg;
+
+  &__title {
+    margin-bottom: 50px;
+  }
 }
 
 .email {
@@ -841,13 +835,23 @@
 
       &:active {
         opacity: 0.5;
-        color: #fff;
+        color: black;
+        border: 1px solid black;
       }
 
       &:hover {
-        color: #fff;
+        color: black;
+        border: 1px solid black;
       }
     }
+
+        .btn-check:checked+.btn,
+        .btn.active,
+        .btn.show,
+        .btn:first-child:active,
+        :not(.btn-check)+.btn:active {
+          color: black;
+        }
   }
 
   &__box {
@@ -873,6 +877,7 @@
     line-height: 23px;
     text-align: start;
     transition: all .3s;
+    background-color: #fff;
 
     &:hover {
       box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.50);
@@ -974,7 +979,7 @@
     font-size: 25px;
     line-height: 28px;
     @extend %arial700;
-    margin-bottom: 35px;
+    margin-bottom: 28px;
   }
 
   &__subtitle {
@@ -1227,6 +1232,10 @@
     margin-top: 30px;
     display: block
   }
+}
+
+.additional__menu {
+  display: none
 }
 
 

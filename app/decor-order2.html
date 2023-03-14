@@ -85,6 +85,41 @@
 
           <ul class="menu__list">
 
+            <li class="additional__menu menu__item--active">
+
+              <div class="dropdown">
+                <button id="header__user" class="btn dropdown-toggle header__user" type="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+
+                  <img src="images/header/user.svg" alt="">
+                </button>
+                <ul class="dropdown-menu header__dropdown-menu">
+                  <li>
+                    <a class="dropdown-item header__dropdown-mainlink"
+                      href="http://localhost:3000/password.html">Имя</a>
+                  </li>
+
+                  <li class="header__dropdown-link">
+                    <a class="dropdown-item header__dropdown-exit" href="http://localhost:3000/register.html"></a>
+                  </li>
+
+                  <li>
+                    <a class="dropdown-item header__dropdown-cart" href="http://localhost:3000/delivery.html">Заказы</a>
+                  </li>
+
+                </ul>
+              </div>
+
+              <a class="header__cart header__menu_link" href="http://localhost:3000/basket.html"></a>
+
+              <form action="#" class="header__form">
+
+                <input type="text" class="header__input" type="text" placeholder="поиск">
+
+              </form>
+
+            </li>
+
             <button type="button" class="btn  menu__link menu__item" data-bs-toggle="modal"
               data-bs-target="#exampleModal10">
               Каталог
@@ -211,6 +246,7 @@
                 </li>
               </ul>
             </div>
+
             <li class="menu__item">
               <a class="menu__link" href="#">
                 контакты
@@ -427,10 +463,10 @@
 
               </div>
 
-              <button class="decor-order__form-delivery__btn form__btn btn" type="submit" data-bs-toggle="modal"
-                data-bs-target="#exampleModal">Оформить заказ</button>
+              <button class="decor-order__form-delivery__btn form__btn btn" type="button" data-bs-toggle="modal"
+                data-bs-target="#exampleModal1">Оформить заказ</button>
 
-              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+              <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel1"
                 aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered">
                   <div class="modal-content">

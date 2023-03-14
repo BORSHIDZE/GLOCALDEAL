@@ -13,97 +13,132 @@
 <body>
 
   <header class="header">
-  
+
     <div class="container_2">
-  
+
       <div class="header__line">
       </div>
-  
+
       <div class="container">
         <div class="header__top">
-  
+
           <div class="header__logo">
-  
+
             <a class="logo" href="#">
               <img class="logo__img" src="images/header/logo.png" alt="логотип">
             </a>
-  
+
             <a class="logo--white" href="#">
               <img class="logo__img--white" src="images/footer/logo-f.png" alt="логотип">
             </a>
-  
+
             <p class="header__logo_text">
               Официальный представитель американской компании <span class="header__logo_subtext">LLC “GD”</span>
-  
+
             </p>
           </div>
-  
+
           <div class="header__menu">
-  
+
             <div class="dropdown">
               <button id="header__user" class="btn dropdown-toggle header__user" type="button" data-bs-toggle="dropdown"
                 aria-expanded="false">
-  
+
                 <img src="images/header/user.svg" alt="">
               </button>
               <ul class="dropdown-menu header__dropdown-menu">
                 <li>
                   <a class="dropdown-item header__dropdown-mainlink" href="http://localhost:3000/password.html">Имя</a>
                 </li>
-  
+
                 <li class="header__dropdown-link">
                   <a class="dropdown-item header__dropdown-exit" href="http://localhost:3000/register.html"></a>
                 </li>
-  
+
                 <li>
                   <a class="dropdown-item header__dropdown-cart" href="http://localhost:3000/delivery.html">Заказы</a>
                 </li>
-  
+
               </ul>
             </div>
-  
+
             <a class="header__cart header__menu_link" href="http://localhost:3000/basket.html"></a>
-  
+
             <form action="#" class="header__form">
-  
+
               <input type="text" class="header__input" type="text" placeholder="поиск">
-  
+
             </form>
           </div>
-  
+
         </div>
       </div>
     </div>
-  
-  
+
+
     <div class="container bottom__container">
-  
+
       <button class="burger"></button>
-  
+
       <div class="header__bottom">
         <nav class="menu">
-  
+
           <ul class="menu__list">
-  
+
+            <li class="additional__menu menu__item--active">
+
+              <div class="dropdown">
+                <button id="header__user" class="btn dropdown-toggle header__user" type="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+
+                  <img src="images/header/user.svg" alt="">
+                </button>
+                <ul class="dropdown-menu header__dropdown-menu">
+                  <li>
+                    <a class="dropdown-item header__dropdown-mainlink"
+                      href="http://localhost:3000/password.html">Имя</a>
+                  </li>
+
+                  <li class="header__dropdown-link">
+                    <a class="dropdown-item header__dropdown-exit" href="http://localhost:3000/register.html"></a>
+                  </li>
+
+                  <li>
+                    <a class="dropdown-item header__dropdown-cart" href="http://localhost:3000/delivery.html">Заказы</a>
+                  </li>
+
+                </ul>
+              </div>
+
+              <a class="header__cart header__menu_link" href="http://localhost:3000/basket.html"></a>
+
+              <form action="#" class="header__form">
+
+                <input type="text" class="header__input" type="text" placeholder="поиск">
+
+              </form>
+
+            </li>
+
             <button type="button" class="btn  menu__link menu__item" data-bs-toggle="modal"
               data-bs-target="#exampleModal10">
               Каталог
             </button>
-  
+
             <div class="modal fade catalog__modal" id="exampleModal10" tabindex="-1" aria-labelledby="exampleModalLabel"
               aria-hidden="true">
-  
+
               <div class="modal-dialog catalog__dialog">
-  
+
                 <div class="modal-content catalog__content">
-  
+
                   <div class="modal-header catalog__header">
-  
+
                   </div>
                   <div class="modal-body catalog__body">
-  
+
                     <ul class="catalog__list">
-  
+
                       <li class="catalog__item">
                         <a class="catalog__link" href="#">
                           МЕДЕЦИНСКОЕ ОБОРУДОВАНИЕ
@@ -145,9 +180,9 @@
                         </a>
                       </li>
                     </ul>
-  
+
                     <ul class="catalog__list">
-  
+
                       <li class="catalog__item">
                         <a class="catalog__link" href="#">
                           ОБОРУДОВАНИЕ И ЗАПЧАСТИ ДЛЯ...
@@ -189,14 +224,14 @@
                         </a>
                       </li>
                     </ul>
-  
-  
+
+
                   </div>
-  
+
                 </div>
               </div>
             </div>
-  
+
             <div class="dropdown">
               <button class="btn dropdown-toggle menu__link menu__link_dropdown" type="button" data-bs-toggle="dropdown"
                 aria-expanded="false">
@@ -211,6 +246,7 @@
                 </li>
               </ul>
             </div>
+
             <li class="menu__item">
               <a class="menu__link" href="#">
                 контакты
@@ -226,13 +262,13 @@
                 о нас
               </a>
             </li>
-  
+
           </ul>
-  
+
         </nav>
-  
+
       </div>
-  
+
     </div>
   </header>
 
@@ -246,16 +282,17 @@
 
         <div class="delivery__inner">
 
-          <div class="accordion delivery__accordion" id="accordionExample">
+          <div class="accordion delivery__accordion" id="accordionExample1">
             <div class="accordion-item question__item delivery__item">
-              <h2 class="accordion-header delivery__header" id="headingOne">
-                <button class="accordion-button question__button delivery__button" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#collapseOne1" aria-expanded="false" aria-controls="collapseOne1">
+              <h2 class="accordion-header delivery__header" id="headingOne1">
+                <button class="accordion-button question__button delivery__button" type="button"
+                  data-bs-toggle="collapse" data-bs-target="#collapseOne1" aria-expanded="false"
+                  aria-controls="collapseOne1">
                   Самовывоз
                 </button>
               </h2>
               <div id="collapseOne1" class="accordion-collapse collapse" aria-labelledby="headingOne"
-                data-bs-parent="#accordionExample">
+                data-bs-parent="#accordionExample1">
                 <div class="accordion-body">
                   Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Речью это меня
                   переписали языкового свой напоивший то реторический заманивший вершину всемогущая живет путь переулка
@@ -267,16 +304,17 @@
             </div>
           </div>
 
-          <div class="accordion delivery__accordion" id="accordionExample">
+          <div class="accordion delivery__accordion" id="accordionExample2">
             <div class="accordion-item question__item delivery__item">
-              <h2 class="accordion-header delivery__header" id="headingOne">
-                <button class="accordion-button question__button delivery__button" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#collapseOne2" aria-expanded="false" aria-controls="collapseOne2">
+              <h2 class="accordion-header delivery__header" id="headingOne2">
+                <button class="accordion-button question__button delivery__button" type="button"
+                  data-bs-toggle="collapse" data-bs-target="#collapseOne2" aria-expanded="false"
+                  aria-controls="collapseOne2">
                   Доставка по Москве
                 </button>
               </h2>
               <div id="collapseOne2" class="accordion-collapse collapse" aria-labelledby="headingOne"
-                data-bs-parent="#accordionExample">
+                data-bs-parent="#accordionExample2">
                 <div class="accordion-body">
                   Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Речью это меня
                   переписали
@@ -289,16 +327,17 @@
             </div>
           </div>
 
-          <div class="accordion delivery__accordion" id="accordionExample">
+          <div class="accordion delivery__accordion" id="accordionExample3">
             <div class="accordion-item question__item delivery__item">
-              <h2 class="accordion-header delivery__header" id="headingOne">
-                <button class="accordion-button question__button delivery__button" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#collapseOne3" aria-expanded="false" aria-controls="collapseOne3">
+              <h2 class="accordion-header delivery__header" id="headingOne3">
+                <button class="accordion-button question__button delivery__button" type="button"
+                  data-bs-toggle="collapse" data-bs-target="#collapseOne3" aria-expanded="false"
+                  aria-controls="collapseOne3">
                   Доставка по Росcии
                 </button>
               </h2>
               <div id="collapseOne3" class="accordion-collapse collapse" aria-labelledby="headingOne"
-                data-bs-parent="#accordionExample">
+                data-bs-parent="#accordionExample3">
                 <div class="accordion-body">
                   Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Речью это меня
                   переписали
@@ -311,16 +350,17 @@
             </div>
           </div>
 
-          <div class="accordion delivery__accordion" id="accordionExample">
+          <div class="accordion delivery__accordion" id="accordionExample4">
             <div class="accordion-item question__item delivery__item">
-              <h2 class="accordion-header delivery__header" id="headingOne">
-                <button class="accordion-button question__button delivery__button" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#collapseOne4" aria-expanded="false" aria-controls="collapseOne4">
+              <h2 class="accordion-header delivery__header" id="headingOne4">
+                <button class="accordion-button question__button delivery__button" type="button"
+                  data-bs-toggle="collapse" data-bs-target="#collapseOne4" aria-expanded="false"
+                  aria-controls="collapseOne4">
                   Ответственность
                 </button>
               </h2>
               <div id="collapseOne4" class="accordion-collapse collapse" aria-labelledby="headingOne"
-                data-bs-parent="#accordionExample">
+                data-bs-parent="#accordionExample4">
                 <div class="accordion-body">
                   Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Речью это меня
                   переписали
@@ -333,16 +373,17 @@
             </div>
           </div>
 
-          <div class="accordion delivery__accordion" id="accordionExample">
+          <div class="accordion delivery__accordion" id="accordionExample5">
             <div class="accordion-item question__item delivery__item">
-              <h2 class="accordion-header delivery__header" id="headingOne">
-                <button class="accordion-button question__button delivery__button" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#collapseOne5" aria-expanded="false" aria-controls="collapseOne5">
+              <h2 class="accordion-header delivery__header" id="headingOne5">
+                <button class="accordion-button question__button delivery__button" type="button"
+                  data-bs-toggle="collapse" data-bs-target="#collapseOne5" aria-expanded="false"
+                  aria-controls="collapseOne5">
                   Время доставки
                 </button>
               </h2>
               <div id="collapseOne5" class="accordion-collapse collapse" aria-labelledby="headingOne"
-                data-bs-parent="#accordionExample">
+                data-bs-parent="#accordionExample5">
                 <div class="accordion-body">
                   Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Речью это меня
                   переписали
