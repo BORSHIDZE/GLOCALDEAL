@@ -58,7 +58,7 @@ body {
     &:hover {
       scale: 1.05;
       border-color: rgba(0, 0, 0, 0.6);
-      box-shadow: 0 5px 0 rgba(0, 0, 0, 0.25);
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
     }
 
     &:active {
@@ -241,4 +241,11 @@ body {
     @extend %arial700;
     margin-bottom: 30px;
   }
+}
+
+.btn:focus-visible {
+  border: none;
+  outline: transparent;
+  background-color: transparent;
+  box-shadow: 0 0 0 0 transparent;
 }

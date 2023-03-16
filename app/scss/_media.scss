@@ -321,6 +321,14 @@
 
 @media (max-width: 576px) {
 
+  .modal-backdrop {
+    height: auto;
+  }
+
+  .modal {
+    top: -15px;
+  }
+
   .section {
     padding-top: 100px;
   }
@@ -674,5 +682,38 @@
 
   .header__user {
     padding-top: 0;
+  }
+
+  .menu__list {
+    justify-content: start;
+    height: 100vh;
+  }
+
+  .catalog__content {
+    padding: 40px 20px;
+    position: relative;
+  }
+
+  .catalog__modal::-webkit-scrollbar {
+    width: 0;
+  }
+
+  .catalog__btn {
+    width: 25px;
+    height: 25px;
+    background-image: url('../images/krest.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    content: "";
+    top: -27px;
+    right: 0;
+    transition: all .3s;
+
+    &:active {
+      opacity: 0.5;
+      border: none;
+    }
   }
 }

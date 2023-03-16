@@ -227,7 +227,7 @@
 .accordion-button:not(.collapsed) {
   color: black;
   background-color: transparent;
-  box-shadow: transparent;
+  box-shadow: 0 0 0 0#fff;
 }
 
 
@@ -534,6 +534,10 @@
     text-align: center;
   }
 
+  &__label {
+    display: block;
+  }
+
   &__input {
     margin-bottom: 20px;
   }
@@ -560,6 +564,25 @@
     text-align: center;
     width: 662px;
     margin: 0 auto;
+    color: black;
+  }
+
+  .btn-check:checked+.btn,
+  .btn.active,
+  .btn.show,
+  .btn:first-child:active,
+  :not(.btn-check)+.btn:active {
+    color: #00288E;
+    opacity: 0.5;
+  }
+
+  .btn-check:checked+.btn,
+  .btn.active,
+  .btn.show,
+  .btn:first-child:active,
+  :not(.btn-check)+.btn:active {
+    color: #00288E;
+    opacity: 0.5;
   }
 
   &__link {
@@ -652,7 +675,7 @@
     background-color: transparent;
 
     &_link {
-      font-size: 12px;
+      font-size: 14px;
       line-height: 14px;
       color: #00288E;
       text-align: end;
@@ -845,13 +868,13 @@
       }
     }
 
-        .btn-check:checked+.btn,
-        .btn.active,
-        .btn.show,
-        .btn:first-child:active,
-        :not(.btn-check)+.btn:active {
-          color: black;
-        }
+    .btn-check:checked+.btn,
+    .btn.active,
+    .btn.show,
+    .btn:first-child:active,
+    :not(.btn-check)+.btn:active {
+      color: black;
+    }
   }
 
   &__box {
@@ -904,7 +927,11 @@
 }
 
 .accordion-button[aria-expanded="true"]::after {
-  display: none;
+  bottom: -290px;
+}
+
+.delivery__button[aria-expanded="true"]::after {
+  bottom: -200px;
 }
 
 .btn-check:checked+.btn,
