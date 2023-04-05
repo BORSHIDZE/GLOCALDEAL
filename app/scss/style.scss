@@ -4,10 +4,32 @@
 @import 'reset';
 @import 'libs';
 
+.modal-content {
+  background: linear-gradient(111.46deg, #191331 23.29%, #2E1458 53.31%, #917925 90.06%);
+  border: 1px solid rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+  color: #fff;
+  font-size: 25px;
+  line-height: 29px;
+  @extend %arial700;
+  text-align: center;
+  padding: 50px;
+  width: 100%;
+
+  .decor-order__img {
+    margin: 0 auto;
+    margin-bottom: 35px;
+  }
+}
+
 .header {
 
   .container_2 {
     border-bottom: 1px solid black;
+  }
+
+  &__logo_burger {
+    display: none;
   }
 
   &__line {
@@ -594,7 +616,7 @@
     line-height: 40px;
     @extend %arial700;
     padding: 0;
-    transform: translateY(-3px);
+    vertical-align: top;
 
     &:hover {
       text-decoration: underline;
@@ -613,11 +635,11 @@
   &__modal {
 
     &_content {
-      background-image: url('../images/bg.png') !important;
+      background-image: url('../images/bg.png');
       @extend %bg;
       border-radius: 25px;
-      background: inherit;
-      background-color: #fff !important;
+      padding: 0;
+      background-color: #fff;
     }
 
     &_dialog {
@@ -649,6 +671,7 @@
       font-size: 14px;
       line-height: 20px;
       @extend %arial700;
+      color: black;
     }
 
     &_link {
@@ -673,6 +696,7 @@
     border: transparent;
     box-shadow: none;
     background-color: transparent;
+    padding-bottom: 0;
 
     &_link {
       font-size: 14px;
@@ -942,31 +966,6 @@
   color: #fff;
 }
 
-.modal-content {
-  background: linear-gradient(111.46deg, #191331 23.29%, #2E1458 53.31%, #917925 90.06%);
-  border: 1px solid rgba(0, 0, 0, 0.6);
-  border-radius: 10px;
-  color: #fff;
-  font-size: 25px;
-  line-height: 29px;
-  @extend %arial700;
-  text-align: center;
-  padding: 50px;
-  width: 100%;
-
-  .decor-order__img {
-    margin: 0 auto;
-    margin-bottom: 35px;
-  }
-}
-
-.btn {
-
-  &:focus-visible {
-    color: #fff;
-  }
-}
-
 .basket {
   padding-bottom: 250px;
   background-image: url('../images/bg.png');
@@ -1101,10 +1100,10 @@
       background-color: transparent;
     }
 
-    &:focus-visible {
-      border: none;
-      outline: transparent;
-    }
+    // &:focus-visible {
+    //   border: none;
+    //   outline: transparent;
+    // }
   }
 }
 

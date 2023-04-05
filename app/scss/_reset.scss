@@ -8,6 +8,10 @@ html {
   box-sizing: inherit;
 }
 
+*:focus-visible {
+  someProperty: someValue;
+}
+
 ul,
 ol {
   padding: 0;

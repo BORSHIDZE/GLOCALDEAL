@@ -18,8 +18,6 @@ function browsersync() {
   })  
 }
 
-
-
 function styles() {
   return src('app/scss/style.scss')
     .pipe(scss({outputStyle: 'compressed'}))
@@ -91,4 +89,4 @@ exports.cleanDist   = cleanDist;
 
 exports.build       = series(cleanDist, images, build);
 
-exports.default  = parallel(styles, scripts, browsersync, watching);
+exports.default     = parallel(styles, scripts, browsersync, watching);
