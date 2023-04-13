@@ -258,6 +258,7 @@
   width: 22px;
   height: 21px;
   content: "";
+  top: 0;
 }
 
 .question {
@@ -346,6 +347,8 @@
     line-height: 23px;
     color: #000;
     padding: 0;
+
+
 
     &:focus {
       border: none;
@@ -948,14 +951,16 @@
   width: 22px;
   height: 21px;
   content: "";
+  transform: rotateX(0);
 }
 
 .accordion-button[aria-expanded="true"]::after {
-  bottom: -290px;
+  top: 0;
 }
 
 .delivery__button[aria-expanded="true"]::after {
-  bottom: -200px;
+  top: 0;
+  transform: rotateX(0);
 }
 
 .btn-check:checked+.btn,

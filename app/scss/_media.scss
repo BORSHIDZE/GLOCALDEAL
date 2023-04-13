@@ -647,6 +647,10 @@
           width: 15px;
           height: 15px;
         }
+        
+        &--active {
+          z-index: -1;
+        }
       }
 
       &_label {
@@ -796,6 +800,11 @@
   }
 
   .delivery {
+
+    &--active {
+      z-index: -1;
+      position: relative;
+    }
 
     .question__button::after {
       right: -7px;
