@@ -225,6 +225,16 @@
     margin-bottom: 50px;
     font-size: 24px;
     line-height: 29px;
+
+    &_link {
+      text-decoration: underline;
+      cursor: pointer;
+    }
+  }
+
+  &__subtext {
+    font-weight: 700;
+    line-height: 50px;
   }
 
   &__box {
@@ -424,13 +434,28 @@
   &__contact {
     width: 550px;
 
+    &_ofer {
+      margin-top: 40px;
+      display: block;
+      transition: all .3s;
+
+      &:hover {
+        text-decoration: underline;
+      }
+
+      &:active {
+        opacity: 0.5;
+      }
+    }
+
     &_box {
       display: flex;
       justify-content: space-between;
     }
 
     &_text,
-    &_link {
+    &_link,
+    &_ofer {
       font-size: 18px;
       line-height: 21px;
       @extend %arial700;
@@ -671,14 +696,14 @@
     }
 
     &_text {
-      font-size: 14px;
+      font-size: 18px;
       line-height: 20px;
       @extend %arial700;
       color: black;
     }
 
     &_link {
-      font-size: 14px;
+      font-size: 18px;
       line-height: 20px;
       @extend %arial700;
       color: #00288E;
@@ -702,7 +727,7 @@
     padding-bottom: 0;
 
     &_link {
-      font-size: 14px;
+      font-size: 18px;
       line-height: 14px;
       color: #00288E;
       text-align: end;
