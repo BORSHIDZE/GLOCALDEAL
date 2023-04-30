@@ -275,6 +275,8 @@
   background-image: url('../images/bg.png');
   @extend %bg;
 
+  
+
   &__top {
     width: 805px;
     margin: 0 auto;
@@ -329,6 +331,12 @@
     padding: 10px 30px;
   }
 
+  &__body {
+    text-align: center;
+    line-height: 27px;
+    margin-top: 10px;
+  }
+
   &__bottom {
 
     margin-bottom: 100px;
@@ -357,7 +365,9 @@
     line-height: 23px;
     color: #000;
     padding: 0;
-
+    justify-content: center;
+    text-align: center;
+    padding: 0 20px;
 
 
     &:focus {
@@ -437,6 +447,7 @@
     &_ofer {
       margin-top: 40px;
       display: block;
+      text-align: center;
       transition: all .3s;
 
       &:hover {
@@ -450,7 +461,7 @@
 
     &_box {
       display: flex;
-      justify-content: space-between;
+      justify-content: space-around;
     }
 
     &_text,
@@ -1296,6 +1307,25 @@
 
 .catalog__btn {
   display: none;
+}
+
+.ofer {
+  background-image: url('../images/bg.png');
+  @extend %bg;
+  padding-bottom: 300px;
+  padding-top: 100px;
+  text-align: center;
+
+  &__link {
+    margin-top: 50px;
+    display: block;
+    text-decoration: underline;
+    transition: all .3s;
+
+    &:active {
+      opacity: 0.5;
+    }
+  }
 }
 
 
