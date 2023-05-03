@@ -21,7 +21,6 @@
     }
   }
 
-
   .logo {
     justify-content: start;
   }
@@ -138,6 +137,17 @@
     .accordion-button[aria-expanded=true]::after {
       bottom: -360px;
       right: -25px;
+    }
+  }
+
+  .requisites {
+
+    &__inner {
+      width: 100%;
+    }
+
+    &__table {
+      width: 100%;
     }
   }
 }
@@ -331,6 +341,16 @@
 
     &__list {
       margin-bottom: 30px;
+    }
+  }
+
+  .requisites {
+    &__item {
+      padding: 10px;
+
+      &-first {
+        width: 120px;
+      }
     }
   }
 

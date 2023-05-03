@@ -275,7 +275,7 @@
   background-image: url('../images/bg.png');
   @extend %bg;
 
-  
+
 
   &__top {
     width: 805px;
@@ -1328,5 +1328,49 @@
   }
 }
 
+.requisites {
+  padding: 100px 0;
+  background-image: url('../images/bg.png');
+  @extend %bg;
+
+  &__title {
+    margin-bottom: 50px;
+  }
+
+  &__inner {
+    display: block;
+    width: 1003px;
+    margin: 0 auto;
+  }
+
+  &__text {
+    font-size: 14px;
+    opacity: 0.5;
+    margin-bottom: 5px;
+    position: relative;
+    z-index: -1;
+  }
+
+  &__table {
+    margin-bottom: 50px;
+    width: 1003px;
+  }
+
+  &__item-first {
+    width: 265px;
+  }
+
+
+  &__item {
+    border: 1px solid #c2c5c8;
+    font-size: 16px;
+    line-height: 29px;
+    padding: 15px 45px;
+
+    &:nth-child(2n+1) {
+      text-align: center
+    }
+  }
+}
 
 @import 'media';
