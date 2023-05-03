@@ -272,8 +272,7 @@
 }
 
 .question {
-  background-image: url('../images/bg.png');
-  @extend %bg;
+
 
 
 
@@ -554,8 +553,7 @@
   text-align: center;
   padding-top: 100px;
   padding-bottom: 200px;
-  background-image: url('../images/bg.png');
-  @extend %bg;
+
 
   .title {
     margin-bottom: 50px;
@@ -573,8 +571,7 @@
 
 .register {
   padding-bottom: 200px;
-  background-image: url('../images/bg.png');
-  @extend %bg;
+
 
   &__title {
     margin-bottom: 50px;
@@ -583,8 +580,7 @@
 
 .email {
   padding-bottom: 160px;
-  background-image: url('../images/bg.png');
-  @extend %bg;
+
 
   &__form {
     padding: 100px;
@@ -615,8 +611,7 @@
 .password {
   padding-top: 170px;
   padding-bottom: 300px;
-  background-image: url('../images/bg.png');
-  @extend %bg;
+
 
   &__text {
     font-size: 35px;
@@ -770,8 +765,7 @@
 .decor-order {
   padding-bottom: 150px;
   padding-top: 150px;
-  background-image: url('../images/bg.png');
-  @extend %bg;
+
 
   &__title {
     margin-bottom: 100px;
@@ -1009,8 +1003,7 @@
 
 .basket {
   padding-bottom: 250px;
-  background-image: url('../images/bg.png');
-  @extend %bg;
+
 
   &-title {
     margin-bottom: 100px;
@@ -1194,8 +1187,7 @@
 
 
 .delivery {
-  background-image: url('../images/bg.png');
-  @extend %bg;
+
   padding-bottom: 150px;
 
   &__title {
@@ -1279,15 +1271,13 @@
 }
 
 .empty {
-  background-image: url('../images/bg.png');
-  @extend %bg;
+
   padding-bottom: 1400px
 }
 
 .confirmation {
   padding: 250px 0;
-  background-image: url('../images/bg.png');
-  @extend %bg;
+
 
   &__title {
     font-size: 25px;
@@ -1310,8 +1300,7 @@
 }
 
 .ofer {
-  background-image: url('../images/bg.png');
-  @extend %bg;
+
   padding-bottom: 300px;
   padding-top: 100px;
   text-align: center;
@@ -1330,8 +1319,7 @@
 
 .requisites {
   padding: 100px 0;
-  background-image: url('../images/bg.png');
-  @extend %bg;
+
 
   &__title {
     margin-bottom: 50px;
@@ -1354,6 +1342,7 @@
   &__table {
     margin-bottom: 50px;
     width: 1003px;
+    background-color: #fff;
   }
 
   &__item-first {
@@ -1370,6 +1359,91 @@
     &:nth-child(2n+1) {
       text-align: center
     }
+  }
+}
+
+.locate {
+
+  margin-bottom: 100px;
+
+  &__inner {
+    padding: 100px;
+    background-color: #fff;
+    margin: 0 auto;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 25px;
+    text-align: center;
+  }
+
+  &__title {
+    margin-bottom: 100px;
+  }
+
+  &__form {
+    margin-bottom: 50px;
+  }
+
+  &__box {
+    margin: 0 auto;
+    width: 793px;
+  }
+
+  &__subbox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5px;
+    margin-bottom: 50px;
+
+    &_text {
+      font-size: 15px;
+      line-height: 17px;
+      @extend %arial700;
+    }
+  }
+
+  &__bottom {
+    text-align: start;
+  }
+
+  &__text {
+    font-size: 15px;
+    line-height: 17px;
+    @extend %arial700;
+
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.history {
+  padding-bottom: 200px;
+
+  &__inner {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: space-between;
+    margin-top: 75px;
+  }
+
+  &__item {
+    width: 200px;
+  }
+
+  &__text {
+    color: #00288E;
+    font-size: 15px;
+    line-height: 17px;
+    @extend %arial700;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  &__img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px;
   }
 }
 

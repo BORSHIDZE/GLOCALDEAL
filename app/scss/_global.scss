@@ -6,6 +6,11 @@ body {
   background-color: #fff;
 }
 
+main {
+  background-image: url('../images/bg.png');
+  @extend %bg;
+}
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
