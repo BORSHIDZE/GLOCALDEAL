@@ -912,6 +912,7 @@
       @extend %arial700;
       margin-top: 50px;
       transition: all .3s;
+      display: block;
 
       &:active {
         opacity: 0.5;
