@@ -1189,6 +1189,10 @@
 
 .delivery {
 
+  &__body {
+    line-height: 35px;
+  }
+
   padding-bottom: 150px;
 
   &__title {
@@ -1447,5 +1451,6 @@
     border-radius: 20px;
   }
 }
+
 
 @import 'media';
