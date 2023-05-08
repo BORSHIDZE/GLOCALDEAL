@@ -200,9 +200,13 @@
   padding: 0;
   padding-top: 85px;
   padding-bottom: 50px;
-
   background-image: url('../images/about/bg.jpg');
   @extend %bg;
+
+  &__span {
+    text-decoration: underline;
+    color: lightblue;
+  }
 
   &__inner {
     text-align: center;
