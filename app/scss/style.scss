@@ -1456,5 +1456,23 @@
   }
 }
 
+.about-page {
+
+  padding-top: 50px;
+  padding-bottom: 100px;
+
+  .about__inner {
+    h1,
+    h2,
+    p {
+      color: black;
+    }
+
+    .about__span {
+      color: blue;
+    }
+  }
+}
+
 
 @import 'media';
